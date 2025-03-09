@@ -7,6 +7,9 @@
 [![FAISS](https://img.shields.io/badge/FAISS-vectordb-orange.svg)](https://github.com/facebookresearch/faiss)
 [![HuggingFace](https://img.shields.io/badge/Hugging-Face-yellow.svg)](https://huggingface.co/)
 
+
+![image](https://github.com/user-attachments/assets/e206a77e-a259-4b94-a251-7d9f447372c0)
+
 ## Overview
 
 ScholarSage is an AI-powered research assistant that leverages vector embeddings, semantic search, and large language models to help researchers explore and analyze academic content. The system automatically fetches information from Wikipedia and ArXiv, processes PDF documents, and provides intelligent answers to research questions through a conversational interface.
