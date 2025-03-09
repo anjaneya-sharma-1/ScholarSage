@@ -1,12 +1,14 @@
 import os
+import streamlit as st
 from dotenv import load_dotenv
 
-# Load environment variables from .env file
-load_dotenv()
+# Load environment variables from .env file if it exists (for local development)
+if os.path.exists(".env"):
+    load_dotenv()
 
-# API Keys from environment variables
-HUGGINGFACE_API_KEY = os.getenv("HUGGINGFACE_API_KEY")
-ARXIV_EMAIL = os.getenv("ARXIV_EMAIL")
+# Try loading from Streamlit secrets first, fallback to environment variables
+HUGGINGFACE_API_KEY = st.secrets.get("HUGGINGFACE_API_KEY", os.getenv("HUGGINGFACE_API_KEY"))
+ARXIV_EMAIL = st.secrets.get("ARXIV_EMAIL", os.getenv("ARXIV_EMAIL"))
 
 # Model settings
 EMBEDDING_MODEL = "sentence-transformers/all-mpnet-base-v2"  
