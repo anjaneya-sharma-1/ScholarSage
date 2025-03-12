@@ -17,7 +17,7 @@
 
 ScholarSage is an AI-powered research assistant that leverages vector embeddings, semantic search, and large language models to help researchers explore and analyze academic content. The system automatically fetches information from Wikipedia and ArXiv, processes PDF documents, and provides intelligent answers to research questions through a conversational interface.
 
-![ScholarSage Interface](https://example.com/scholarsage-screenshot.png)
+
 
 ## Features
 
